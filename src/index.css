@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply text-6xl font-bold font-noto mb-8;
+  }
+  p {
+    @apply text-base;
+  }
+}
