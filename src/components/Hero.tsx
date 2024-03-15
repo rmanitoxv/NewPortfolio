@@ -6,6 +6,7 @@ const Hero = () => {
   const langs = [
     "ReactJS",
     "NextJS",
+    "Angular",
     "VueJS",
     "NodeJS",
     "Laravel",
