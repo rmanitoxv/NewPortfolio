@@ -8,8 +8,9 @@ export default {
         noto: "Noto Serif",
         raleway: "Raleway",
         barlow: "Barlow",
+        inter: "Inter",
       },
     },
   },
   plugins: [],
-};
+}

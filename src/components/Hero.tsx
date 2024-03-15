@@ -1,4 +1,7 @@
-import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa"
+import { FaFilePdf } from "react-icons/fa6"
+import resume from "../files/RUSSEL A. MANITO.pdf"
+
 const Hero = () => {
   const langs = [
     "ReactJS",
@@ -17,7 +20,7 @@ const Hero = () => {
     "CSS",
     "C++",
     "C",
-  ];
+  ]
 
   return (
     <div className="bg-neutral-950 text-white h-screen flex flex-col justify-center px-[36rem]">
@@ -34,7 +37,7 @@ const Hero = () => {
             >
               {lang}
             </div>
-          );
+          )
         })}
       </div>
       <p className="text-center my-4">
@@ -42,16 +45,19 @@ const Hero = () => {
           manito.russel@gmail.com
         </a>
       </p>
-      <div className="flex gap-2 justify-center text-2xl">
+      <div className="flex gap-2 justify-center items-center text-2xl">
         <a href="https://www.linkedin.com/in/rrmanitoxv/">
           <FaLinkedin />
         </a>
         <a href="https://github.com/rmanitoxv">
           <FaGithubSquare />
         </a>
+        <a href={resume} className="text-xl">
+          <FaFilePdf />
+        </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
