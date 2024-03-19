@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <div className="sticky top-0 bg-neutral-950">
-        <Parallax opacity={[2, 0]} scale={[2, 0]}>
+        <Parallax opacity={[2, 0]}>
           <Hero />
         </Parallax>
       </div>
