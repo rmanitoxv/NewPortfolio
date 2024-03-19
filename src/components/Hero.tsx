@@ -25,17 +25,24 @@ const Hero = () => {
 
   return (
     <div className="bg-neutral-950 text-white h-screen flex justify-center">
-      <div className="flex flex-col justify-center h-full lg:w-2/5 items-center">
-        <p className="font-playfair xl:text-8xl lg:text-7xl text-6xl">Hello,</p>
-        <p className="font-playfair xl:text-8xl lg:text-7xl text-6xl mb-8 text-center">
-          I'm <span className="font-noto font-bold">Russel.</span>
+      <div className="flex flex-col justify-center h-full lg:w-3/5 items-center">
+        <p className="font-playfair tracking-wide 2xl:text-8xl lg:text-7xl text-5xl text-center">
+          Hello,
+          <span className="md:hidden"> I'm </span>
+          <span className="block md:hidden font-noto font-bold 2xl:text-[12rem] xl:text-9xl text-8xl pb-8">
+            Russel
+          </span>
+        </p>
+        <p className="hidden tracking-wide md:block font-noto font-bold 2xl:text-[12rem] text-9xl pb-8">
+          <span className="2xl:text-8xl lg:text-7xl text-5xl"> I'm </span>
+          Russel
         </p>
         <div className="flex flex-wrap justify-center gap-2">
           {langs.map((lang) => {
             return (
               <div
                 key={lang}
-                className="border rounded-full px-2 py-1 hover:text-neutral-950 hover:bg-white hover:-translate-y-1 cursor-default transition-all "
+                className="border rounded-full px-2 2xl:px-4 py-1 hover:text-neutral-950 hover:bg-white hover:-translate-y-1 cursor-default transition-all 2xl:text-xl xl:text-sm"
               >
                 {lang}
               </div>
@@ -43,7 +50,7 @@ const Hero = () => {
           })}
         </div>
         <div className="flex flex-col items-center w-full">
-          <p className="text-center my-4">
+          <p className="text-center my-4 2xl:text-xl">
             <a
               href="mailto:manito.russel@gmail.com"
               className="hover:underline"

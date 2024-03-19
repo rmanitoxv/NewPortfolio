@@ -2,7 +2,7 @@ import avatar from "../files/avatar.png"
 
 const Contact = () => {
   return (
-    <div className="h-screen flex justify-center items-center text-white px-8">
+    <div className="h-screen flex justify-center items-center text-white px-8 ">
       <div className="lg:w-[72rem] shadow-inner rounded-3xl bg-stone-900 py-12 text-center relative">
         <img
           src={avatar}
