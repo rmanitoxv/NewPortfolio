@@ -2,22 +2,37 @@ import { Parallax } from "react-scroll-parallax"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import Skills from "./components/Skills"
+import { useEffect } from "react"
 
 const App = () => {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    
+    return () => {
+      document.documentElement.style.scrollBehavior = "";
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="sticky top-0 bg-neutral-950">
-        <Parallax opacity={[2, 0]}>
+    <div className="snap-y snap-mandatory h-screen overflow-y-scroll select-none">
+      <div id="home" className="snap-start h-screen bg-neutral-950">
+        <Parallax>
           <Hero />
         </Parallax>
       </div>
-      <div className="sticky top-0 bg-zinc-900">
-        <Parallax opacity={[2, 0]}>
+      <div id="skills" className="snap-start h-screen bg-neutral-900">
+        <Parallax>
+          <Skills />
+        </Parallax>
+      </div>
+      <div id="projects" className="snap-start h-screen bg-zinc-900">
+        <Parallax>
           <Projects />
         </Parallax>
       </div>
-      <div className="sticky top-0 bg-stone-950">
-        <Parallax opacity={[2, 0]}>
+      <div id="contact" className="snap-start h-screen bg-stone-950">
+        <Parallax>
           <Contact />
         </Parallax>
       </div>
