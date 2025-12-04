@@ -17,7 +17,7 @@ const Skills = () => {
 		{
 			title: "Freelance",
 			company: "Self-Employed",
-			period: "2023 - Present",
+			period: "2022 - Present",
 			description: [
 				"Developed robust payment solutions with VueJS and Laravel, increasing client conversion rates by 25%",
 				"Designed and implemented a NextJS reservation system for a hospitality client, reducing booking errors by 40%",
@@ -28,7 +28,7 @@ const Skills = () => {
 		{
 			title: "Software Engineer Intern",
 			company: "Fortworth Incorporation",
-			period: "March 2023 - June 2023",
+			period: "March 2023 - April 2023",
 			description: [
 				"Spearheaded mobile application development for a cross-functional agile team",
 				"Created an interactive ReactJS keyboard game featuring real-time performance metrics and progression tracking",
@@ -50,8 +50,8 @@ const Skills = () => {
 		// Projects
 		{
 			title: "SpotEasy",
-			company: "Personal Project",
-			period: "2024",
+			company: "Client Project",
+			period: "2023",
 			description: [
 				"Engineered a comprehensive parking management system with real-time availability monitoring",
 				"Implemented secure user authentication and seamless payment processing integration",
